@@ -14,6 +14,15 @@
 		ADD66B8F1BB992DE00138FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B861BB992DE00138FDC /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		ADD66B901BB992DE00138FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B871BB992DE00138FDC /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ADD66B911BB992DE00138FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B891BB992DE00138FDC /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ADD66B971BB9B63E00138FDC /* PostsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B961BB9B63E00138FDC /* PostsListVC.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66B9B1BB9B90200138FDC /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B9A1BB9B90200138FDC /* PostsListViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B9C1BB9BB1B00138FDC /* PostsListPresenter.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BA01BB9BBFF00138FDC /* PostsListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B9F1BB9BBFF00138FDC /* PostsListWireframe.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA41BB9BD5700138FDC /* PostsListInteractorIO.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,16 @@
 		ADD66B881BB992DE00138FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD66B8A1BB992DE00138FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADD66B8C1BB992DE00138FDC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD66B961BB9B63E00138FDC /* PostsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListVC.swift; sourceTree = "<group>"; };
+		ADD66B9A1BB9B90200138FDC /* PostsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		ADD66B9C1BB9BB1B00138FDC /* PostsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListPresenter.swift; sourceTree = "<group>"; };
+		ADD66B9F1BB9BBFF00138FDC /* PostsListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListWireframe.swift; sourceTree = "<group>"; };
+		ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		ADD66BA41BB9BD5700138FDC /* PostsListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInteractorIO.swift; sourceTree = "<group>"; };
+		ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInteractor.swift; sourceTree = "<group>"; };
+		ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListAssembly.swift; sourceTree = "<group>"; };
+		ADD66BAC1BB9C5D800138FDC /* ArchProofBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchProofBridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +169,8 @@
 		ADD66B821BB992DE00138FDC /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */,
+				ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -157,6 +178,7 @@
 		ADD66B831BB992DE00138FDC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -164,6 +186,7 @@
 		ADD66B841BB992DE00138FDC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				ADD66B941BB9B56800138FDC /* List Posts */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -182,8 +205,46 @@
 			isa = PBXGroup;
 			children = (
 				ADD66B8C1BB992DE00138FDC /* Info.plist */,
+				ADD66BAC1BB9C5D800138FDC /* ArchProofBridgingHeader.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADD66B941BB9B56800138FDC /* List Posts */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BA31BB9BD3C00138FDC /* Business Logic */,
+				ADD66B951BB9B60700138FDC /* View */,
+				ADD66B9E1BB9BBF300138FDC /* Wireframe */,
+			);
+			path = "List Posts";
+			sourceTree = "<group>";
+		};
+		ADD66B951BB9B60700138FDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B961BB9B63E00138FDC /* PostsListVC.swift */,
+				ADD66B9A1BB9B90200138FDC /* PostsListViewModel.swift */,
+				ADD66B9C1BB9BB1B00138FDC /* PostsListPresenter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADD66B9E1BB9BBF300138FDC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B9F1BB9BBFF00138FDC /* PostsListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		ADD66BA31BB9BD3C00138FDC /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BA41BB9BD5700138FDC /* PostsListInteractorIO.swift */,
+				ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */,
+			);
+			path = "Business Logic";
 			sourceTree = "<group>";
 		};
 		D6C8D4B28CF8B36E4A705E40 /* Frameworks */ = {
@@ -376,6 +437,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD66BA01BB9BBFF00138FDC /* PostsListWireframe.swift in Sources */,
+				ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */,
+				ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */,
+				ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */,
+				ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */,
+				ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */,
+				ADD66B9B1BB9B90200138FDC /* PostsListViewModel.swift in Sources */,
+				ADD66B971BB9B63E00138FDC /* PostsListVC.swift in Sources */,
+				ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */,
 				ADD66B8E1BB992DE00138FDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +595,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ArchProof/Supporting Files/ArchProofBridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -540,6 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ArchProof/Supporting Files/ArchProofBridgingHeader.h";
 			};
 			name = Release;
 		};
