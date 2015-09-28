@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADD66B531BB9908700138FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B521BB9908700138FDC /* AppDelegate.swift */; };
+		ADD66B551BB9908700138FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B541BB9908700138FDC /* ViewController.swift */; };
+		ADD66B581BB9908700138FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B561BB9908700138FDC /* Main.storyboard */; };
+		ADD66B5A1BB9908700138FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B591BB9908700138FDC /* Assets.xcassets */; };
+		ADD66B5D1BB9908700138FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD66B5B1BB9908700138FDC /* LaunchScreen.storyboard */; };
+		ADD66B681BB9908700138FDC /* ArchProofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B671BB9908700138FDC /* ArchProofTests.swift */; };
+		ADD66B731BB9908700138FDC /* ArchProofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B721BB9908700138FDC /* ArchProofUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADD66B641BB9908700138FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADD66B471BB9908700138FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADD66B4E1BB9908700138FDC;
+			remoteInfo = ArchProof;
+		};
+		ADD66B6F1BB9908700138FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADD66B471BB9908700138FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADD66B4E1BB9908700138FDC;
+			remoteInfo = ArchProof;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADD66B4F1BB9908700138FDC /* ArchProof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchProof.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD66B521BB9908700138FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADD66B541BB9908700138FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADD66B571BB9908700138FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADD66B591BB9908700138FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADD66B5C1BB9908700138FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADD66B5E1BB9908700138FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD66B631BB9908700138FDC /* ArchProofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchProofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD66B671BB9908700138FDC /* ArchProofTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchProofTests.swift; sourceTree = "<group>"; };
+		ADD66B691BB9908700138FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD66B6E1BB9908700138FDC /* ArchProofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchProofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD66B721BB9908700138FDC /* ArchProofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchProofUITests.swift; sourceTree = "<group>"; };
+		ADD66B741BB9908700138FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADD66B4C1BB9908700138FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B601BB9908700138FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B6B1BB9908700138FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADD66B461BB9908700138FDC = {
+			isa = PBXGroup;
+			children = (
+				ADD66B511BB9908700138FDC /* ArchProof */,
+				ADD66B661BB9908700138FDC /* ArchProofTests */,
+				ADD66B711BB9908700138FDC /* ArchProofUITests */,
+				ADD66B501BB9908700138FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADD66B501BB9908700138FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B4F1BB9908700138FDC /* ArchProof.app */,
+				ADD66B631BB9908700138FDC /* ArchProofTests.xctest */,
+				ADD66B6E1BB9908700138FDC /* ArchProofUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADD66B511BB9908700138FDC /* ArchProof */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B521BB9908700138FDC /* AppDelegate.swift */,
+				ADD66B541BB9908700138FDC /* ViewController.swift */,
+				ADD66B561BB9908700138FDC /* Main.storyboard */,
+				ADD66B591BB9908700138FDC /* Assets.xcassets */,
+				ADD66B5B1BB9908700138FDC /* LaunchScreen.storyboard */,
+				ADD66B5E1BB9908700138FDC /* Info.plist */,
+			);
+			path = ArchProof;
+			sourceTree = "<group>";
+		};
+		ADD66B661BB9908700138FDC /* ArchProofTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B671BB9908700138FDC /* ArchProofTests.swift */,
+				ADD66B691BB9908700138FDC /* Info.plist */,
+			);
+			path = ArchProofTests;
+			sourceTree = "<group>";
+		};
+		ADD66B711BB9908700138FDC /* ArchProofUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66B721BB9908700138FDC /* ArchProofUITests.swift */,
+				ADD66B741BB9908700138FDC /* Info.plist */,
+			);
+			path = ArchProofUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADD66B4E1BB9908700138FDC /* ArchProof */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD66B771BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProof" */;
+			buildPhases = (
+				ADD66B4B1BB9908700138FDC /* Sources */,
+				ADD66B4C1BB9908700138FDC /* Frameworks */,
+				ADD66B4D1BB9908700138FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchProof;
+			productName = ArchProof;
+			productReference = ADD66B4F1BB9908700138FDC /* ArchProof.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADD66B621BB9908700138FDC /* ArchProofTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD66B7A1BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProofTests" */;
+			buildPhases = (
+				ADD66B5F1BB9908700138FDC /* Sources */,
+				ADD66B601BB9908700138FDC /* Frameworks */,
+				ADD66B611BB9908700138FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADD66B651BB9908700138FDC /* PBXTargetDependency */,
+			);
+			name = ArchProofTests;
+			productName = ArchProofTests;
+			productReference = ADD66B631BB9908700138FDC /* ArchProofTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADD66B6D1BB9908700138FDC /* ArchProofUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD66B7D1BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProofUITests" */;
+			buildPhases = (
+				ADD66B6A1BB9908700138FDC /* Sources */,
+				ADD66B6B1BB9908700138FDC /* Frameworks */,
+				ADD66B6C1BB9908700138FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADD66B701BB9908700138FDC /* PBXTargetDependency */,
+			);
+			name = ArchProofUITests;
+			productName = ArchProofUITests;
+			productReference = ADD66B6E1BB9908700138FDC /* ArchProofUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADD66B471BB9908700138FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "HE:labs";
+				TargetAttributes = {
+					ADD66B4E1BB9908700138FDC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					ADD66B621BB9908700138FDC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = ADD66B4E1BB9908700138FDC;
+					};
+					ADD66B6D1BB9908700138FDC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = ADD66B4E1BB9908700138FDC;
+					};
+				};
+			};
+			buildConfigurationList = ADD66B4A1BB9908700138FDC /* Build configuration list for PBXProject "ArchProof" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADD66B461BB9908700138FDC;
+			productRefGroup = ADD66B501BB9908700138FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADD66B4E1BB9908700138FDC /* ArchProof */,
+				ADD66B621BB9908700138FDC /* ArchProofTests */,
+				ADD66B6D1BB9908700138FDC /* ArchProofUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADD66B4D1BB9908700138FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD66B5D1BB9908700138FDC /* LaunchScreen.storyboard in Resources */,
+				ADD66B5A1BB9908700138FDC /* Assets.xcassets in Resources */,
+				ADD66B581BB9908700138FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B611BB9908700138FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B6C1BB9908700138FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADD66B4B1BB9908700138FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD66B551BB9908700138FDC /* ViewController.swift in Sources */,
+				ADD66B531BB9908700138FDC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B5F1BB9908700138FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD66B681BB9908700138FDC /* ArchProofTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD66B6A1BB9908700138FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD66B731BB9908700138FDC /* ArchProofUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADD66B651BB9908700138FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADD66B4E1BB9908700138FDC /* ArchProof */;
+			targetProxy = ADD66B641BB9908700138FDC /* PBXContainerItemProxy */;
+		};
+		ADD66B701BB9908700138FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADD66B4E1BB9908700138FDC /* ArchProof */;
+			targetProxy = ADD66B6F1BB9908700138FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADD66B561BB9908700138FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADD66B571BB9908700138FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADD66B5B1BB9908700138FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADD66B5C1BB9908700138FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADD66B751BB9908700138FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADD66B761BB9908700138FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADD66B781BB9908700138FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArchProof/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADD66B791BB9908700138FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArchProof/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADD66B7B1BB9908700138FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArchProofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchProof.app/ArchProof";
+			};
+			name = Debug;
+		};
+		ADD66B7C1BB9908700138FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArchProofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArchProof.app/ArchProof";
+			};
+			name = Release;
+		};
+		ADD66B7E1BB9908700138FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArchProofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArchProof;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ADD66B7F1BB9908700138FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArchProofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helabs.ArchProofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArchProof;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADD66B4A1BB9908700138FDC /* Build configuration list for PBXProject "ArchProof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD66B751BB9908700138FDC /* Debug */,
+				ADD66B761BB9908700138FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD66B771BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD66B781BB9908700138FDC /* Debug */,
+				ADD66B791BB9908700138FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADD66B7A1BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProofTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD66B7B1BB9908700138FDC /* Debug */,
+				ADD66B7C1BB9908700138FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADD66B7D1BB9908700138FDC /* Build configuration list for PBXNativeTarget "ArchProofUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD66B7E1BB9908700138FDC /* Debug */,
+				ADD66B7F1BB9908700138FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADD66B471BB9908700138FDC /* Project object */;
+}
