@@ -10,13 +10,19 @@ import Foundation
 
 class PostsListPresenter: NSObject, PostsListInteractorOutput {
 
+    // MARK: - Properties -
+    
     var interactor: PostsListInteractorInput?
     weak var listWireframe: PostsListWireframe?
     weak var interface: PostsListVC?
 
+    // MARK: - Public Methods -
+    
     func updateView() {
         interactor?.fetchPosts()
     }
+    
+    // MARK: - PostsListInteractorOutput -
     
     func postsFetched(posts: [Post]) {
         var rows = [PostsListViewModel]()

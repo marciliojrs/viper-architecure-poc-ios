@@ -23,6 +23,8 @@ class PostsListVC: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
+        
         presenter?.updateView()
     }
     
@@ -30,6 +32,11 @@ class PostsListVC: UIViewController, UITableViewDataSource {
     
     func reloadData() {
         tableView.reloadData()
+    }
+    
+    func configureTableView() {
+        tableView.rowHeight          = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 44.0
     }
     
     // MARK: - UITableViewDataSource -
@@ -44,6 +51,8 @@ class PostsListVC: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: indexPath) as UITableViewCell
+        
+        cell.textLabel?.numberOfLines = 0
         
         let post = tableViewData![indexPath.row]
         cell.textLabel?.text = post.title

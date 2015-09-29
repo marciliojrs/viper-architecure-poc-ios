@@ -11,8 +11,12 @@ import UIKit
 
 class PostsListWireframe: NSObject {
 
+    // MARK: - Properties -
+    
     var rootWireframe: RootWireframe?
     var postsListViewController: PostsListVC?
+    
+    // MARK: - Navigation Flow Control -
     
     func presentListInterfaceFromWindow(window: UIWindow) {
         rootWireframe?.showRootViewController(postsListViewController!, inWindow: window)

@@ -10,8 +10,12 @@ import Foundation
 
 class PostsListInteractor: NSObject, PostsListInteractorInput {
 
+    // MARK: - Properties -
+    
     var dataManager: DataManagerInterface!
     weak var delegate: PostsListInteractorOutput?
+    
+    // MARK: - PostsListInteractorInput -
     
     func fetchPosts() {
         dataManager.fetchPosts { (posts) in
