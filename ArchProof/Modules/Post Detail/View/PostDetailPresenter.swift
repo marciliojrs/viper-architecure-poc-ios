@@ -17,6 +17,7 @@ class PostDetailPresenter: NSObject, PostDetailInteractorOutput {
     // MARK: - Public Methods -
     
     func fetchPostWithId(postId: Int) {
+        interface?.bindPost(nil)
         interactor?.fetchPostWithId(postId)
     }
     

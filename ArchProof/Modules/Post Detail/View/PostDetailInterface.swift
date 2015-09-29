@@ -10,6 +10,6 @@ import Foundation
 
 @objc protocol PostDetailInterface {
  
-    func bindPost(post: PostDetailViewModel)
+    func bindPost(post: PostDetailViewModel?)
     
 }

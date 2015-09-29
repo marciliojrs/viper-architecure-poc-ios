@@ -28,7 +28,16 @@ class PostDetailVC: UIViewController, PostDetailInterface {
     
     // MARK: - PostDetailInterface -
     
-    func bindPost(post: PostDetailViewModel) {
+    func bindPost(post: PostDetailViewModel?) {
+        guard let post = post else {
+            userIdLabel.text = ""
+            idLabel.text     = ""
+            titleLabel.text  = ""
+            bodyLabel.text   = ""
+            
+            return
+        }
+        
         userIdLabel.text = post.userId
         idLabel.text     = post.id
         titleLabel.text  = post.title
