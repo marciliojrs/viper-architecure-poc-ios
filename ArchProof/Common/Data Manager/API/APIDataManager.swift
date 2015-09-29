@@ -13,9 +13,15 @@ import AlamofireObjectMapper
 
 class APIDataManager: NSObject, DataManagerInterface {
 
-    func fetchPosts(completion: ([Post] -> Void)?) {
-        Alamofire.request(APIRouter.Posts).responseArray { (posts: [Post]?, error: ErrorType?) in
-            completion?(posts!)
+    func fetchPosts(completion: ([Post] -> Void)) {
+        Alamofire.request(APIRouter.Posts(postId: nil)).responseArray { (posts: [Post]?, error: ErrorType?) in
+            completion(posts!)
+        }
+    }
+    
+    func fetchPostWithId(postId: Int, completion: (Post -> Void)) {
+        Alamofire.request(APIRouter.Posts(postId: postId)).responseObject { (post: Post?, error: ErrorType?) in
+            completion(post!)
         }
     }
     

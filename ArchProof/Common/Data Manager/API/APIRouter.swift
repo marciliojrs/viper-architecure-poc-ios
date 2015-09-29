@@ -13,12 +13,14 @@ enum APIRouter: URLRequestConvertible {
     
     static let baseURLString = "http://jsonplaceholder.typicode.com"
     
-    case Posts
+    case Posts(postId: Int?)
     
     var URLRequest: NSMutableURLRequest {
         let result: (method: Alamofire.Method, path: String, parameters: [String: AnyObject]?) = {
             switch self {
-            case .Posts:
+            case .Posts(let postId) where postId != nil:
+                return (.GET, "/posts/\(postId!)", nil)
+            case .Posts(_):
                 return (.GET, "/posts", nil)
             }
         }()

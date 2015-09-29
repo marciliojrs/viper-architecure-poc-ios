@@ -10,6 +10,8 @@ import Foundation
 
 @objc protocol DataManagerInterface {
     
-    func fetchPosts(completion: ([Post] -> Void)?)
+    func fetchPosts(completion: ([Post] -> Void))
+ 
+    func fetchPostWithId(postId: Int, completion: (Post -> Void))
     
 }

@@ -15,4 +15,10 @@ class PostDetailInteractor: NSObject, PostDetailInteractorInput {
     
     // MARK: - PostDetailInteractorInput -
     
+    func fetchPostWithId(postId: Int) {
+        dataManager?.fetchPostWithId(postId, completion: { (post) in
+            self.delegate?.postFetched(post)
+            return
+        })
+    }
 }

@@ -15,12 +15,15 @@ class PostDetailVC: UIViewController, PostDetailInterface {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
+    var postId: Int?
     var presenter: PostDetailPresenter?
     
     // MARK: - View Life Cycle -
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        presenter?.fetchPostWithId(postId!)
     }
     
     // MARK: - PostDetailInterface -

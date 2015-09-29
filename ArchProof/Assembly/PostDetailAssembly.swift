@@ -17,7 +17,7 @@ class PostDetailAssembly: TyphoonAssembly {
             (definition) in
          
             definition.injectProperty("postDetailViewController", with: self.postDetailViewController())
-            
+
         }
     }
     
@@ -48,7 +48,7 @@ class PostDetailAssembly: TyphoonAssembly {
             
             factoryMethod.injectParameterWith("PostDetailViewIdentifier")
             
-            }) { (definition) -> Void in
+            }) { (definition) in
                 
                 definition.injectProperty("presenter", with: self.postDetailPresenter())
                 

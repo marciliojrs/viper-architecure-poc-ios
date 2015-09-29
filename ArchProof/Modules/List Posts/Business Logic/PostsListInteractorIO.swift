@@ -11,5 +11,5 @@
 }
 
 @objc protocol PostsListInteractorOutput : class {
-    func postsFetched(posts: [Post]) -> ()
+    func postsFetched(posts: [Post])
 }
