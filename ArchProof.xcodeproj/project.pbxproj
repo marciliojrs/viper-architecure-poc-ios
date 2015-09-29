@@ -23,6 +23,10 @@
 		ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BAF1BB9DC7E00138FDC /* DataManagerInterface.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB11BB9DEE200138FDC /* APIRouter.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB31BB9E25000138FDC /* APIDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BB71BB9E36400138FDC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB61BB9E36400138FDC /* Post.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListAssembly.swift; sourceTree = "<group>"; };
 		ADD66BAC1BB9C5D800138FDC /* ArchProofBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchProofBridgingHeader.h; sourceTree = "<group>"; };
+		ADD66BAF1BB9DC7E00138FDC /* DataManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerInterface.swift; sourceTree = "<group>"; };
+		ADD66BB11BB9DEE200138FDC /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		ADD66BB31BB9E25000138FDC /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
+		ADD66BB61BB9E36400138FDC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,7 @@
 		ADD66B831BB992DE00138FDC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ADD66BAD1BB9DC5100138FDC /* Data Manager */,
 				ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */,
 			);
 			path = Common;
@@ -245,6 +254,33 @@
 				ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */,
 			);
 			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		ADD66BAD1BB9DC5100138FDC /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BAE1BB9DC5B00138FDC /* API */,
+				ADD66BAF1BB9DC7E00138FDC /* DataManagerInterface.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		ADD66BAE1BB9DC5B00138FDC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BB51BB9E35200138FDC /* Entities */,
+				ADD66BB11BB9DEE200138FDC /* APIRouter.swift */,
+				ADD66BB31BB9E25000138FDC /* APIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ADD66BB51BB9E35200138FDC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BB61BB9E36400138FDC /* Post.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		D6C8D4B28CF8B36E4A705E40 /* Frameworks */ = {
@@ -438,14 +474,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD66BA01BB9BBFF00138FDC /* PostsListWireframe.swift in Sources */,
+				ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */,
 				ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */,
 				ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */,
 				ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */,
+				ADD66BB71BB9E36400138FDC /* Post.swift in Sources */,
 				ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */,
 				ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */,
+				ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */,
 				ADD66B9B1BB9B90200138FDC /* PostsListViewModel.swift in Sources */,
 				ADD66B971BB9B63E00138FDC /* PostsListVC.swift in Sources */,
 				ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */,
+				ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */,
 				ADD66B8E1BB992DE00138FDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

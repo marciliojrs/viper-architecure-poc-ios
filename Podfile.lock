@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (2.0.2)
-  - Genome (1.0)
+  - AlamofireObjectMapper (1.0):
+    - Alamofire (~> 2.0.0)
+    - ObjectMapper (= 0.17)
+  - ObjectMapper (0.17)
   - Routable (0.2.0)
   - Typhoon (3.3.2):
     - Typhoon/no-arc (= 3.3.2)
@@ -8,13 +11,15 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Genome
+  - AlamofireObjectMapper (~> 1.0)
+  - ObjectMapper
   - Routable
   - Typhoon
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
-  Genome: e5b91fb270783aa638932015d379a2af8c5454a9
+  AlamofireObjectMapper: 4f9d766a4742bb69258921723bafc260849f216c
+  ObjectMapper: fa286b7cb5a398f1b0d8d64d0dd33fd1b307022c
   Routable: 859984d3f1613a4139795bab45941f71ed752564
   Typhoon: d0f4b40120b7011ac41748c3ca141cb12aac3737
 

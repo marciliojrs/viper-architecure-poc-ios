@@ -43,4 +43,8 @@ class ApplicationAssembly: TyphoonAssembly {
         }
     }
     
+    dynamic func apiDataManager() -> AnyObject {
+        return TyphoonDefinition.withClass(APIDataManager.self)
+    }
+    
 }

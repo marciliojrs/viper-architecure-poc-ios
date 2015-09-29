@@ -13,5 +13,5 @@ import Foundation
 }
 
 @objc protocol PostsListInteractorOutput : class {
-    
+    func postsFetched(posts: [Post]) -> ()
 }

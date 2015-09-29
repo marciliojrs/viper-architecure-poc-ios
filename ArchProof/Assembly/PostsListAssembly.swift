@@ -25,6 +25,7 @@ class PostsListAssembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(PostsListInteractor.self) {
             (definition) in
             
+            definition.injectProperty("dataManager", with: self.applicationAssembly.apiDataManager())
             definition.injectProperty("delegate", with: self.postsListPresenter())
             
         }
@@ -34,8 +35,7 @@ class PostsListAssembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(PostsListPresenter.self) {
             (definition) in
             
-            definition.injectProperty("interface", with: self.postsListViewController())
-            
+            definition.injectProperty("interface", with: self.postsListViewController())            
             definition.injectProperty("interactor", with: self.postsListInteractor())
             definition.injectProperty("listWireframe", with: self.postsListWireframe())
             

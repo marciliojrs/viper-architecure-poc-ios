@@ -10,10 +10,14 @@ import Foundation
 
 class PostsListInteractor: NSObject, PostsListInteractorInput {
 
+    var dataManager: DataManagerInterface!
     weak var delegate: PostsListInteractorOutput?
     
     func fetchPosts() {
-        
+        dataManager.fetchPosts { (posts) in
+            self.delegate?.postsFetched(posts)
+            return
+        }
     }
     
 }

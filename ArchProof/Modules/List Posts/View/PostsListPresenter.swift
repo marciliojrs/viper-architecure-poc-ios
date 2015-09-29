@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PostsListPresenter: NSObject {
+class PostsListPresenter: NSObject, PostsListInteractorOutput {
 
     var interactor: PostsListInteractorInput?
     weak var listWireframe: PostsListWireframe?
@@ -16,6 +16,19 @@ class PostsListPresenter: NSObject {
 
     func updateView() {
         interactor?.fetchPosts()
+    }
+    
+    func postsFetched(posts: [Post]) {
+        var rows = [PostsListViewModel]()
+        
+        for post in posts {
+            let postViewModel = PostsListViewModel(id: post.id, userId: post.userId, title: post.title, body: post.body)
+            
+            rows.append(postViewModel)
+        }
+        
+        interface?.tableViewData = rows
+        interface?.reloadData()
     }
     
 }
