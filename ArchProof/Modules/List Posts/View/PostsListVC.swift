@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class PostsListVC: UIViewController, UITableViewDataSource {
+class PostsListVC: UIViewController, PostsListInterface, UITableViewDataSource {
 
     // MARK: - IBOutlet -
     @IBOutlet weak var tableView: UITableView!
@@ -17,7 +17,7 @@ class PostsListVC: UIViewController, UITableViewDataSource {
     // MARK: - Properties -
     
     var presenter: PostsListPresenter?
-    var tableViewData: [PostsListViewModel]?
+    var data: [PostsListViewModel]?
     
     // MARK: - View Life Cycle -
     
@@ -30,7 +30,11 @@ class PostsListVC: UIViewController, UITableViewDataSource {
         presenter?.updateView()
     }
     
-    // MARK: - Public Methods -
+    // MARK: - PostsListInterface -
+    
+    func setTableViewData(tableViewData: [PostsListViewModel]) {
+        data = tableViewData
+    }
     
     func reloadData() {
         tableView.reloadData()
@@ -58,7 +62,7 @@ class PostsListVC: UIViewController, UITableViewDataSource {
     // MARK: - UITableViewDataSource -
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let data = tableViewData else {
+        guard let data = data else {
             return 0
         }
         
@@ -70,7 +74,7 @@ class PostsListVC: UIViewController, UITableViewDataSource {
         
         cell.textLabel?.numberOfLines = 0
         
-        let post = tableViewData![indexPath.row]
+        let post = data![indexPath.row]
         cell.textLabel?.text = post.title
         
         return cell

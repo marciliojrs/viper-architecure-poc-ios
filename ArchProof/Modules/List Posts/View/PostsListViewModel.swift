@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PostsListViewModel {
+class PostsListViewModel: NSObject {
     
     let id: Int
     let userId: Int

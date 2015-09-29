@@ -27,6 +27,7 @@
 		ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB11BB9DEE200138FDC /* APIRouter.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB31BB9E25000138FDC /* APIDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB71BB9E36400138FDC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB61BB9E36400138FDC /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BBB1BBAB94D00138FDC /* PostsListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BBA1BBAB94D00138FDC /* PostsListInterface.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		ADD66BB11BB9DEE200138FDC /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		ADD66BB31BB9E25000138FDC /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
 		ADD66BB61BB9E36400138FDC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ADD66BBA1BBAB94D00138FDC /* PostsListInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		ADD66B951BB9B60700138FDC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ADD66BBA1BBAB94D00138FDC /* PostsListInterface.swift */,
 				ADD66B961BB9B63E00138FDC /* PostsListVC.swift */,
 				ADD66B9A1BB9B90200138FDC /* PostsListViewModel.swift */,
 				ADD66B9C1BB9BB1B00138FDC /* PostsListPresenter.swift */,
@@ -485,6 +488,7 @@
 				ADD66B9B1BB9B90200138FDC /* PostsListViewModel.swift in Sources */,
 				ADD66B971BB9B63E00138FDC /* PostsListVC.swift in Sources */,
 				ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */,
+				ADD66BBB1BBAB94D00138FDC /* PostsListInterface.swift in Sources */,
 				ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */,
 				ADD66B8E1BB992DE00138FDC /* AppDelegate.swift in Sources */,
 			);

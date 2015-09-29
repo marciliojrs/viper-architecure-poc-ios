@@ -15,7 +15,7 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
     
     var interactor: PostsListInteractorInput?
     weak var listWireframe: PostsListWireframe?
-    weak var interface: PostsListVC?
+    weak var interface: PostsListInterface?
 
     // MARK: - Public Methods -
     
@@ -36,7 +36,7 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
         }
         
         interface?.dismissHUD()
-        interface?.tableViewData = rows
+        interface?.setTableViewData(rows)
         interface?.reloadData()
     }
     
