@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PKHUD
 
 class PostsListPresenter: NSObject, PostsListInteractorOutput {
 
@@ -19,6 +20,7 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
     // MARK: - Public Methods -
     
     func updateView() {
+        interface?.showHUD()
         interactor?.fetchPosts()
     }
     
@@ -33,6 +35,7 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
             rows.append(postViewModel)
         }
         
+        interface?.dismissHUD()
         interface?.tableViewData = rows
         interface?.reloadData()
     }

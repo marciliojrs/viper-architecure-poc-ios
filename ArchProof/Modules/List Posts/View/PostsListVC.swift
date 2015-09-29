@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class PostsListVC: UIViewController, UITableViewDataSource {
 
@@ -24,19 +25,34 @@ class PostsListVC: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         configureTableView()
+        configureHUD()
         
         presenter?.updateView()
     }
     
-    // MARK: - Helpers -
+    // MARK: - Public Methods -
     
     func reloadData() {
         tableView.reloadData()
     }
     
-    func configureTableView() {
+    func showHUD() {
+        PKHUD.sharedHUD.show()
+    }
+    
+    func dismissHUD() {
+        PKHUD.sharedHUD.hide()
+    }
+    
+    // MARK: - Helpers -
+    
+    private func configureTableView() {
         tableView.rowHeight          = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44.0
+    }
+    
+    private func configureHUD() {
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
     }
     
     // MARK: - UITableViewDataSource -
