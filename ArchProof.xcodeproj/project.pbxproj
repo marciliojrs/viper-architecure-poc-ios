@@ -28,6 +28,14 @@
 		ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB31BB9E25000138FDC /* APIDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB71BB9E36400138FDC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB61BB9E36400138FDC /* Post.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BBB1BBAB94D00138FDC /* PostsListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BBA1BBAB94D00138FDC /* PostsListInterface.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BC11BBAC05900138FDC /* PostDetailInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC01BBAC05900138FDC /* PostDetailInteractorIO.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BC31BBAC07600138FDC /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC21BBAC07600138FDC /* PostDetailInteractor.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BC51BBAC0F400138FDC /* PostDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC41BBAC0F400138FDC /* PostDetailWireframe.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BC71BBAC10600138FDC /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC61BBAC10600138FDC /* PostDetailVC.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BC91BBAC11500138FDC /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC81BBAC11500138FDC /* PostDetailPresenter.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BCB1BBAC16E00138FDC /* PostDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCA1BBAC16E00138FDC /* PostDetailInterface.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BCD1BBAC38600138FDC /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCC1BBAC38600138FDC /* PostDetailViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		ADD66BCF1BBAC40700138FDC /* PostDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,14 @@
 		ADD66BB31BB9E25000138FDC /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
 		ADD66BB61BB9E36400138FDC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ADD66BBA1BBAB94D00138FDC /* PostsListInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInterface.swift; sourceTree = "<group>"; };
+		ADD66BC01BBAC05900138FDC /* PostDetailInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractorIO.swift; sourceTree = "<group>"; };
+		ADD66BC21BBAC07600138FDC /* PostDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		ADD66BC41BBAC0F400138FDC /* PostDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailWireframe.swift; sourceTree = "<group>"; };
+		ADD66BC61BBAC10600138FDC /* PostDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
+		ADD66BC81BBAC11500138FDC /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		ADD66BCA1BBAC16E00138FDC /* PostDetailInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInterface.swift; sourceTree = "<group>"; };
+		ADD66BCC1BBAC38600138FDC /* PostDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +197,7 @@
 			children = (
 				ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */,
 				ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */,
+				ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -198,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD66B941BB9B56800138FDC /* List Posts */,
+				ADD66BBC1BBAC02700138FDC /* Post Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -284,6 +302,44 @@
 				ADD66BB61BB9E36400138FDC /* Post.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		ADD66BBC1BBAC02700138FDC /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BBD1BBAC02700138FDC /* Business Logic */,
+				ADD66BBE1BBAC02700138FDC /* View */,
+				ADD66BBF1BBAC02700138FDC /* Wireframe */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
+		ADD66BBD1BBAC02700138FDC /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BC01BBAC05900138FDC /* PostDetailInteractorIO.swift */,
+				ADD66BC21BBAC07600138FDC /* PostDetailInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		ADD66BBE1BBAC02700138FDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BCA1BBAC16E00138FDC /* PostDetailInterface.swift */,
+				ADD66BC61BBAC10600138FDC /* PostDetailVC.swift */,
+				ADD66BC81BBAC11500138FDC /* PostDetailPresenter.swift */,
+				ADD66BCC1BBAC38600138FDC /* PostDetailViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADD66BBF1BBAC02700138FDC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				ADD66BC41BBAC0F400138FDC /* PostDetailWireframe.swift */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		D6C8D4B28CF8B36E4A705E40 /* Frameworks */ = {
@@ -477,9 +533,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD66BA01BB9BBFF00138FDC /* PostsListWireframe.swift in Sources */,
+				ADD66BC51BBAC0F400138FDC /* PostDetailWireframe.swift in Sources */,
 				ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */,
+				ADD66BC71BBAC10600138FDC /* PostDetailVC.swift in Sources */,
 				ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */,
+				ADD66BCD1BBAC38600138FDC /* PostDetailViewModel.swift in Sources */,
+				ADD66BCF1BBAC40700138FDC /* PostDetailAssembly.swift in Sources */,
+				ADD66BC11BBAC05900138FDC /* PostDetailInteractorIO.swift in Sources */,
 				ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */,
+				ADD66BCB1BBAC16E00138FDC /* PostDetailInterface.swift in Sources */,
 				ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */,
 				ADD66BB71BB9E36400138FDC /* Post.swift in Sources */,
 				ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */,
@@ -490,6 +552,8 @@
 				ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */,
 				ADD66BBB1BBAB94D00138FDC /* PostsListInterface.swift in Sources */,
 				ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */,
+				ADD66BC91BBAC11500138FDC /* PostDetailPresenter.swift in Sources */,
+				ADD66BC31BBAC07600138FDC /* PostDetailInteractor.swift in Sources */,
 				ADD66B8E1BB992DE00138FDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

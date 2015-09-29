@@ -45,6 +45,7 @@
 	<array>
 		<string>ApplicationAssembly</string>
 		<string>PostsListAssembly</string>
+		<string>PostDetailAssembly</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>

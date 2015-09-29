@@ -15,6 +15,7 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
     
     var interactor: PostsListInteractorInput?
     weak var listWireframe: PostsListWireframe?
+    weak var detailWireframe: PostDetailWireframe?
     weak var interface: PostsListInterface?
 
     // MARK: - Public Methods -
@@ -22,6 +23,10 @@ class PostsListPresenter: NSObject, PostsListInteractorOutput {
     func updateView() {
         interface?.showHUD()
         interactor?.fetchPosts()
+    }
+    
+    func handleCellSelection(post: PostsListViewModel) {
+        listWireframe?.presentPostDetailWireframe(post.id)
     }
     
     // MARK: - PostsListInteractorOutput -

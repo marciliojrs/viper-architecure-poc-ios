@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class PostsListVC: UIViewController, PostsListInterface, UITableViewDataSource {
+class PostsListVC: UIViewController, PostsListInterface, UITableViewDataSource, UITableViewDelegate {
 
     // MARK: - IBOutlet -
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +28,14 @@ class PostsListVC: UIViewController, PostsListInterface, UITableViewDataSource {
         configureHUD()
         
         presenter?.updateView()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+        }
     }
     
     // MARK: - PostsListInterface -
@@ -78,6 +86,14 @@ class PostsListVC: UIViewController, PostsListInterface, UITableViewDataSource {
         cell.textLabel?.text = post.title
         
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate -
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let post = data![indexPath.row]
+        
+        presenter?.handleCellSelection(post)
     }
 
 }

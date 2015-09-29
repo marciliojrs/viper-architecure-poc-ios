@@ -14,12 +14,18 @@ class PostsListWireframe: NSObject {
     // MARK: - Properties -
     
     var rootWireframe: RootWireframe?
+    var postDetailWireframe: PostDetailWireframe?
+    
     var postsListViewController: PostsListVC?
     
     // MARK: - Navigation Flow Control -
     
     func presentListInterfaceFromWindow(window: UIWindow) {
         rootWireframe?.showRootViewController(postsListViewController!, inWindow: window)
+    }
+    
+    func presentPostDetailWireframe(postId: Int) {
+        postDetailWireframe?.pushToDetailView(postId, fromNavigationController: postsListViewController!.navigationController!)
     }
     
 }

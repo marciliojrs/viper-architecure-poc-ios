@@ -11,6 +11,7 @@ import Typhoon
 class PostsListAssembly: TyphoonAssembly {
 
     var applicationAssembly: ApplicationAssembly!
+    var postDetailAssembly: PostDetailAssembly!
     
     dynamic func postsListWireframe() -> AnyObject {
         return TyphoonDefinition.withClass(PostsListWireframe.self) {
@@ -18,6 +19,8 @@ class PostsListAssembly: TyphoonAssembly {
             
             definition.injectProperty("rootWireframe", with: self.applicationAssembly.rootWireframe())
             definition.injectProperty("postsListViewController", with: self.postsListViewController())
+            definition.injectProperty("postDetailWireframe", with: self.postDetailAssembly.postDetailWireframe())
+            
         }
     }
     
