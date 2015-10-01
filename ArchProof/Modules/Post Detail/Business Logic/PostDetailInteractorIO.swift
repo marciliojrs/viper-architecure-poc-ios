@@ -8,10 +8,10 @@
 
 import Foundation
 
-@objc protocol PostDetailInteractorInput {
+protocol PostDetailInteractorInput: class {
     func fetchPostWithId(postId: Int)
 }
 
-@objc protocol PostDetailInteractorOutput {
+protocol PostDetailInteractorOutput: class {
     func postFetched(post: Post)
 }

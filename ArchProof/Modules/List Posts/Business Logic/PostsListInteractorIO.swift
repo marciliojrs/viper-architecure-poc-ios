@@ -6,10 +6,10 @@
 //  Copyright © 2015 HE:labs. All rights reserved.
 //
 
-@objc protocol PostsListInteractorInput : class {
+protocol PostsListInteractorInput : class {
     func fetchPosts()
 }
 
-@objc protocol PostsListInteractorOutput : class {
+protocol PostsListInteractorOutput : class {
     func postsFetched(posts: [Post])
 }

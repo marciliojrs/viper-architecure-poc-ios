@@ -8,20 +8,72 @@
 
 import Foundation
 import Alamofire
-import ObjectMapper
-import AlamofireObjectMapper
+import Genome
 
-class APIDataManager: NSObject, DataManagerInterface {
+enum APIError : ErrorType {
+    case UnableToConvertJson
+}
+
+struct APIDataManager: DataManagerInterface {
 
     func fetchPosts(completion: ([Post] -> Void)) {
-        Alamofire.request(APIRouter.Posts(postId: nil)).responseArray { (posts: [Post]?, error: ErrorType?) in
-            completion(posts!)
+        Alamofire.request(APIRouter.Posts(postId: nil)).responseJSON { (response) in
+            switch response.result {
+            case .Success(let value):
+                do {
+                    let json = try self.toJsonArray(value)
+                    let posts = try [Post].mappedInstance(json)
+                    completion(posts)
+//                    completion(.Success(photo))
+                }
+                catch {
+//                    completion(.Failure(error))
+                }
+            case .Failure(let error):
+                print(error)
+//                completion(.Failure(error))
+            }
         }
+//        Alamofire.request(APIRouter.Posts(postId: nil)).responseArray { (posts: [Post]?, error: ErrorType?) in
+//            completion(posts!)
+//        }
     }
     
     func fetchPostWithId(postId: Int, completion: (Post -> Void)) {
-        Alamofire.request(APIRouter.Posts(postId: postId)).responseObject { (post: Post?, error: ErrorType?) in
-            completion(post!)
+        Alamofire.request(APIRouter.Posts(postId: postId)).responseJSON { (response) in
+            switch response.result {
+            case .Success(let value):
+                do {
+                    let json = try self.toJson(value)
+                    let post = try Post.mappedInstance(json)
+                    completion(post)
+//                    completion(.Success(photo))
+                }
+                catch {
+//                    completion(.Failure(error))
+                }
+            case .Failure(let error):
+                print(error)
+//                completion(.Failure(error))
+            }
+        }
+    }
+    
+    private func toJson(value: AnyObject) throws -> JSON {
+        if let json = value as? JSON {
+            return json
+        }
+        else {
+            throw APIError.UnableToConvertJson
+        }
+    }
+    
+    private func toJsonArray(value: AnyObject) throws -> [JSON] {
+        if let json = value as? [JSON] {
+            return json
+        }
+        else {
+            throw APIError.UnableToConvertJson
         }
     }
     

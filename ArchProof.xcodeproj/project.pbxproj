@@ -21,8 +21,6 @@
 		ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA41BB9BD5700138FDC /* PostsListInteractorIO.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */; settings = {ASSET_TAGS = (); }; };
-		ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */; settings = {ASSET_TAGS = (); }; };
-		ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BAF1BB9DC7E00138FDC /* DataManagerInterface.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB11BB9DEE200138FDC /* APIRouter.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BB31BB9E25000138FDC /* APIDataManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -35,7 +33,6 @@
 		ADD66BC91BBAC11500138FDC /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BC81BBAC11500138FDC /* PostDetailPresenter.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BCB1BBAC16E00138FDC /* PostDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCA1BBAC16E00138FDC /* PostDetailInterface.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66BCD1BBAC38600138FDC /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCC1BBAC38600138FDC /* PostDetailViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		ADD66BCF1BBAC40700138FDC /* PostDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +75,6 @@
 		ADD66BA11BB9BCB400138FDC /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		ADD66BA41BB9BD5700138FDC /* PostsListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInteractorIO.swift; sourceTree = "<group>"; };
 		ADD66BA61BB9BD8700138FDC /* PostsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListInteractor.swift; sourceTree = "<group>"; };
-		ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
-		ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListAssembly.swift; sourceTree = "<group>"; };
 		ADD66BAC1BB9C5D800138FDC /* ArchProofBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchProofBridgingHeader.h; sourceTree = "<group>"; };
 		ADD66BAF1BB9DC7E00138FDC /* DataManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerInterface.swift; sourceTree = "<group>"; };
 		ADD66BB11BB9DEE200138FDC /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
@@ -93,7 +88,6 @@
 		ADD66BC81BBAC11500138FDC /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
 		ADD66BCA1BBAC16E00138FDC /* PostDetailInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInterface.swift; sourceTree = "<group>"; };
 		ADD66BCC1BBAC38600138FDC /* PostDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
-		ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				ADD66B801BB992DE00138FDC /* AppDelegate */,
-				ADD66B821BB992DE00138FDC /* Assembly */,
 				ADD66B831BB992DE00138FDC /* Common */,
 				ADD66B841BB992DE00138FDC /* Modules */,
 				ADD66B851BB992DE00138FDC /* Resources */,
@@ -190,16 +183,6 @@
 				ADD66B811BB992DE00138FDC /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		ADD66B821BB992DE00138FDC /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				ADD66BA81BB9C27E00138FDC /* ApplicationAssembly.swift */,
-				ADD66BAA1BB9C4D300138FDC /* PostsListAssembly.swift */,
-				ADD66BCE1BBAC40700138FDC /* PostDetailAssembly.swift */,
-			);
-			path = Assembly;
 			sourceTree = "<group>";
 		};
 		ADD66B831BB992DE00138FDC /* Common */ = {
@@ -538,18 +521,15 @@
 				ADD66BC71BBAC10600138FDC /* PostDetailVC.swift in Sources */,
 				ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */,
 				ADD66BCD1BBAC38600138FDC /* PostDetailViewModel.swift in Sources */,
-				ADD66BCF1BBAC40700138FDC /* PostDetailAssembly.swift in Sources */,
 				ADD66BC11BBAC05900138FDC /* PostDetailInteractorIO.swift in Sources */,
 				ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */,
 				ADD66BCB1BBAC16E00138FDC /* PostDetailInterface.swift in Sources */,
-				ADD66BAB1BB9C4D300138FDC /* PostsListAssembly.swift in Sources */,
 				ADD66BB71BB9E36400138FDC /* Post.swift in Sources */,
 				ADD66BA21BB9BCB400138FDC /* RootWireframe.swift in Sources */,
 				ADD66BA71BB9BD8700138FDC /* PostsListInteractor.swift in Sources */,
 				ADD66BB41BB9E25000138FDC /* APIDataManager.swift in Sources */,
 				ADD66B9B1BB9B90200138FDC /* PostsListViewModel.swift in Sources */,
 				ADD66B971BB9B63E00138FDC /* PostsListVC.swift in Sources */,
-				ADD66BA91BB9C27E00138FDC /* ApplicationAssembly.swift in Sources */,
 				ADD66BBB1BBAB94D00138FDC /* PostsListInterface.swift in Sources */,
 				ADD66BB01BB9DC7E00138FDC /* DataManagerInterface.swift in Sources */,
 				ADD66BC91BBAC11500138FDC /* PostDetailPresenter.swift in Sources */,

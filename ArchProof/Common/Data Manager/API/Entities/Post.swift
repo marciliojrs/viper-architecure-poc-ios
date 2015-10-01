@@ -7,24 +7,18 @@
 //
 
 import Foundation
-import ObjectMapper
+import Genome
 
-class Post: NSObject, Mappable {
- 
-    var userId: Int = 0
-    var id: Int = 0
-    var title: String = ""
-    var body: String = ""
+struct Post: BasicMappable {
+    private(set) var userId: Int = 0
+    private(set) var id: Int = 0
+    private(set) var title: String = ""
+    private(set) var body: String = ""
     
-    required init?(_: Map) {
-        
+    mutating func sequence(map: Map) throws {
+        try userId <~ map["userId"]
+        try id <~ map ["id"]
+        try title <~ map["title"]
+        try body <~ map["body"]
     }
-    
-    func mapping(map: Map) {
-        userId <- map["userId"]
-        id <- map["id"]
-        title <- map["title"]
-        body <- map["body"]
-    }
-    
 }

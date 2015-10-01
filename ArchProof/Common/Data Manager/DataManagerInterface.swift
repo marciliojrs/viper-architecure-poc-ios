@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc protocol DataManagerInterface {
+protocol DataManagerInterface {
     
     func fetchPosts(completion: ([Post] -> Void))
  
