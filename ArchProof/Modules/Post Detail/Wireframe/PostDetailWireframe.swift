@@ -13,10 +13,8 @@ class PostDetailWireframe: NSObject {
     var postDetailViewController: PostDetailVC?
     
     func pushToDetailView(postId: Int, fromNavigationController navigationController: UINavigationController) {
-        
         postDetailViewController!.postId = postId
         navigationController.pushViewController(postDetailViewController!, animated: true)
-        
     }
     
 }

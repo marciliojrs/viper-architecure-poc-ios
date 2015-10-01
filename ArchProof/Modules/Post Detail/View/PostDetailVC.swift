@@ -6,6 +6,8 @@
 //  Copyright © 2015 HE:labs. All rights reserved.
 //
 
+import PKHUD
+
 class PostDetailVC: UIViewController, PostDetailInterface {
 
     // MARK: - Properties -
@@ -19,6 +21,13 @@ class PostDetailVC: UIViewController, PostDetailInterface {
     var presenter: PostDetailPresenter?
     
     // MARK: - View Life Cycle -
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureUI()
+        configureHUD()
+    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -42,6 +51,27 @@ class PostDetailVC: UIViewController, PostDetailInterface {
         idLabel.text     = post.id
         titleLabel.text  = post.title
         bodyLabel.text   = post.body
+    }
+    
+    func showHUD() {
+        PKHUD.sharedHUD.show()
+    }
+    
+    func dismissHUD() {
+        PKHUD.sharedHUD.hide()
+    }
+    
+    // MARK: - Helper - 
+    
+    private func configureHUD() {
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+    }
+    
+    private func configureUI() {
+        userIdLabel.textColor = UIColor.lightGrayColor()
+        idLabel.textColor = UIColor.lightGrayColor()
+        titleLabel.textColor = UIColor.lightGrayColor()
+        bodyLabel.textColor = UIColor.lightGrayColor()
     }
     
 }

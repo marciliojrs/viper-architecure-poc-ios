@@ -12,4 +12,8 @@ import Foundation
  
     func bindPost(post: PostDetailViewModel?)
     
+    func showHUD()
+    
+    func dismissHUD()
+    
 }

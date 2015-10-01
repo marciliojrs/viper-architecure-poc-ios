@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35901B8BE62FBAAE3CCEE1F7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150A9F22212202F061A6B41A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ADCD2E641BBDCBEF00C2FAB2 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD2E631BBDCBEF00C2FAB2 /* DependencyInjection.swift */; settings = {ASSET_TAGS = (); }; };
 		ADD66B681BB9908700138FDC /* ArchProofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B671BB9908700138FDC /* ArchProofTests.swift */; };
 		ADD66B731BB9908700138FDC /* ArchProofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B721BB9908700138FDC /* ArchProofUITests.swift */; };
 		ADD66B8E1BB992DE00138FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD66B811BB992DE00138FDC /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
@@ -56,6 +57,7 @@
 		150A9F22212202F061A6B41A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAFB739A4B0C1CE3AB7E59A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		99AD2C0D3EB12D4980F1D802 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ADCD2E631BBDCBEF00C2FAB2 /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		ADD66B4F1BB9908700138FDC /* ArchProof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchProof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD66B631BB9908700138FDC /* ArchProofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchProofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD66B671BB9908700138FDC /* ArchProofTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchProofTests.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD66B811BB992DE00138FDC /* AppDelegate.swift */,
+				ADCD2E631BBDCBEF00C2FAB2 /* DependencyInjection.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				ADD66BB21BB9DEE200138FDC /* APIRouter.swift in Sources */,
 				ADD66BC71BBAC10600138FDC /* PostDetailVC.swift in Sources */,
 				ADD66B9D1BB9BB1B00138FDC /* PostsListPresenter.swift in Sources */,
+				ADCD2E641BBDCBEF00C2FAB2 /* DependencyInjection.swift in Sources */,
 				ADD66BCD1BBAC38600138FDC /* PostDetailViewModel.swift in Sources */,
 				ADD66BC11BBAC05900138FDC /* PostDetailInteractorIO.swift in Sources */,
 				ADD66BA51BB9BD5700138FDC /* PostsListInteractorIO.swift in Sources */,

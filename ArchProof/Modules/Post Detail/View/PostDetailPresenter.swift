@@ -17,6 +17,7 @@ class PostDetailPresenter: NSObject, PostDetailInteractorOutput {
     // MARK: - Public Methods -
     
     func fetchPostWithId(postId: Int) {
+        interface?.showHUD()
         interface?.bindPost(nil)
         interactor?.fetchPostWithId(postId)
     }
@@ -30,6 +31,8 @@ class PostDetailPresenter: NSObject, PostDetailInteractorOutput {
             body: post.body)
         
         interface?.bindPost(postViewModel)
+        
+        interface?.dismissHUD()
     }
     
 }
