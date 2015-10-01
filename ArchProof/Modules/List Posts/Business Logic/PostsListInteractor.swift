@@ -18,9 +18,13 @@ class PostsListInteractor: NSObject, PostsListInteractorInput {
     // MARK: - PostsListInteractorInput -
     
     func fetchPosts() {
-        dataManager.fetchPosts { (posts) in
-            self.delegate?.postsFetched(posts)
-            return
+        dataManager.fetchPosts { result in
+            switch result {
+            case .Success(let posts):
+                self.delegate?.postsFetched(posts)
+            case .Failure(let error):
+                print(error)
+            }
         }
     }
     

@@ -10,15 +10,19 @@ class PostDetailInteractor: NSObject, PostDetailInteractorInput {
 
     // MARK: - Properties -
     
-    var dataManager: DataManagerInterface?
+    var dataManager: DataManagerInterface!
     weak var delegate: PostDetailInteractorOutput?
     
     // MARK: - PostDetailInteractorInput -
     
     func fetchPostWithId(postId: Int) {
-        dataManager?.fetchPostWithId(postId, completion: { (post) in
-            self.delegate?.postFetched(post)
-            return
+        dataManager.fetchPostWithId(postId, completion: { (result) in
+            switch result {
+            case .Success(let post):
+                self.delegate?.postFetched(post)
+            case .Failure(let error):
+                print(error)
+            }
         })
     }
 }
