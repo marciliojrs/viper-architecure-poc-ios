@@ -41,12 +41,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>TyphoonInitialAssemblies</key>
-	<array>
-		<string>ApplicationAssembly</string>
-		<string>PostsListAssembly</string>
-		<string>PostDetailAssembly</string>
-	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

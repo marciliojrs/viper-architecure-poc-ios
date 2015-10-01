@@ -7,6 +7,5 @@ use_frameworks!
 pod 'ObjectMapper'
 pod 'AlamofireObjectMapper', '~> 1.0'
 pod 'Alamofire'
-pod 'Routable'
-pod 'Typhoon'
+pod 'Swinject'
 pod 'PKHUD'
